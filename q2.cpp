@@ -44,10 +44,13 @@ bool isConsecutive(int arr[], int n)
  
 int main()
 {
-    int arr[] = { -1, 5, 4, 2, 0, 3, 1 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+    try{
+            int arr[] = { -1, 5, 4, 2, 0, 3, 1 };
+            int n = sizeof(arr) / sizeof(arr[0]);
  
-    isConsecutive(arr, n)? cout << "The array contains consecutive integers":
+            isConsecutive(arr, n)? cout << "The array contains consecutive integers":
                         cout << "The array does not contain consecutive integers";
+    }
+    catch(exception q1){}
     return 0;
 }

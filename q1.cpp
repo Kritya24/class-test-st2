@@ -35,16 +35,18 @@ int findMinIndex(int arr[], int n)
  
 int main()
 {
-    
-    int arr[] = { 5, 6, 3, 4, 3, 6, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int minIndex = findMinIndex(arr, n);
+    try{
+            int arr[] = { 5, 6, 3, 4, 3, 6, 4 };
+            int n = sizeof(arr) / sizeof(arr[0]);
+            int minIndex = findMinIndex(arr, n);
  
-    if (minIndex != n) {
-        cout << "The minimum index of the repeating element is " << minIndex;
+            if (minIndex != n) {
+            cout << "The minimum index of the repeating element is " << minIndex;
+            }
+            else {
+                    cout << "Invalid Input";
+            }
     }
-    else {
-        cout << "Invalid Input";
-    }
+    catch(exception q2){}
     return 0;
 }
