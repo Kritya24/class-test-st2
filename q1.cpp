@@ -11,10 +11,8 @@ using namespace std;
 int findMinIndex(int arr[], int n)
 {
     int minIndex = n;
- 
     // empty array 
     unordered_set<int> set;
- 
     // right to left
     for (int i = n - 1; i >= 0; i--)
     {
@@ -27,12 +25,10 @@ int findMinIndex(int arr[], int n)
             set.insert(arr[i]);
         }
     }
- 
     // invalid 
     if (minIndex == n) {
         return -1;
     }
- 
     //  minimum index
     return minIndex;
 }
@@ -41,10 +37,7 @@ int main()
 {
     
     int arr[] = { 5, 6, 3, 4, 3, 6, 4 };
-    
- 
     int n = sizeof(arr) / sizeof(arr[0]);
- 
     int minIndex = findMinIndex(arr, n);
  
     if (minIndex != n) {
@@ -53,6 +46,5 @@ int main()
     else {
         cout << "Invalid Input";
     }
- 
     return 0;
 }
