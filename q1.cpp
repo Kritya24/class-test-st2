@@ -18,7 +18,7 @@ int findMinIndex(int arr[], int n)
     // right to left
     for (int i = n - 1; i >= 0; i--)
     {
-        // updating the minimum index
+        // updating minimum index
         if (set.find(arr[i]) != set.end()) {
             minIndex = i;
         }
